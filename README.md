@@ -15,6 +15,8 @@ pip install psycopg2
 
 tambien es necesario que cuente con PostgreSQL, este configurado con el usuario, clave y puerto
 por Default el usuario es postgres y el puerto es 5432, cree la base de datos, en mi caso la llame ventas
+**no es necesario crear las tablas ya que las enviaresmos desde los dataframes**
+
 si se hace algun cambio se debe modificar la linea 
 
 engine = create_engine('postgresql://**postgres:root**@localhost:**5432**/**ventas**') #se crea la conexion con PostgreSQL
@@ -23,3 +25,5 @@ en mi caso postgres es mi usuario, root la clave, 5432 es el puerto y ventas el 
 
 una vez hecho esto se puede ejecutar el Script, abra el archivo ETL en un editor como jupyternotebook, visual studio code
 ejecute todo el script 
+
+Cuando vaya a postgres y actulice la base de datos se dara cuenta que las tablas se crearon y los datos se enviaron 
